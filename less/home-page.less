@@ -1,22 +1,20 @@
 .home {
+//formatting for text immediatly below header image
+  .welcome-top {
+    width:100%;
+    border-bottom:2px dashed @silver;
+    padding: 20px 0;
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    
-
-   
-    
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
-
-    .text-content .welcome {
-        width:100%;
     }
 
     .img-content {
@@ -62,6 +60,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+//styling for buttons
+      .btn {
+        font-size:1.8rem;
+        color:white;
+        background-color: @button-bg;
+        border-radius: 10px;
+        height: 45px;
+        width:200px;
+      }
     }
   }
 }// home
