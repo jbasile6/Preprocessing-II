@@ -221,11 +221,6 @@ header.header-section a {
   font-size: 1.6rem;
   padding: 20px;
 }
-@media (max-width: 500px) {
-  .home {
-    flex-wrap: wrap;
-  }
-}
 .home .welcome-top {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
