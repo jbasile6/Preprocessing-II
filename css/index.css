@@ -173,12 +173,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+section {
+  border: 2px solid red;
+}
+div {
+  border: 2px solid green;
+}
 header.header-section {
   padding: 23px 100px;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+@media (max-width: 500px) {
+  header.header-section {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+  }
 }
 header.header-section a {
   text-decoration: none;
@@ -186,6 +203,12 @@ header.header-section a {
   padding: 0 16px;
   font-size: 1.6rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  header.header-section a {
+    flex-wrap: nowrap;
+    padding: 0 20x;
+  }
 }
 .footer {
   width: 100%;
@@ -197,6 +220,11 @@ header.header-section a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    flex-wrap: wrap;
+  }
 }
 .home .welcome-top {
   width: 100%;

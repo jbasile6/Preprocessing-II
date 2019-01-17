@@ -1,11 +1,17 @@
 // Navigation Styles here
 
 header.header-section{
-
     padding: 23px 100px;
-
+    border-bottom: 2px dashed @silver;
     .custom-layout(space-between, center);
     width:100%;
+
+    @media @mobile {
+        font-size:1.2rem;
+        flex-wrap: wrap;
+        .custom-layout(center, center);
+        padding:14px 30px;
+    }
 
     a{
         text-decoration: none;
@@ -14,6 +20,12 @@ header.header-section{
         font-size:1.6rem;
         font-weight: bold;
 
+        @media @mobile {
+            flex-wrap:nowrap;
+            padding: 0 20x;
+
     }
     
+    
+}
 }

@@ -1,4 +1,6 @@
 .home {
+
+  
 //formatting for text immediatly below header image
   .welcome-top {
     width:100%;
@@ -6,18 +8,33 @@
     padding: 20px 0;
   }
 
-  .content-section {
+  section.home-body-container {
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      flex-wrap:wrap;
+      justify-content: center;
+    }
   
-    .text-content {
+      .text-content {
       width: 48%;
       padding-right: 1%;
+        @media @mobile {
+          width: 500px;
+          padding: 0;
+      }
     }
 
-    .img-content {
+      .img-content {
       width: 48%;
       padding-left: 1%;
 
@@ -25,6 +42,7 @@
         border-radius: 10px;
       }
     }
+    
   }
 
   .inverse-content {
@@ -45,6 +63,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @moblie {
+      width:100%;
+    }
 
     img {
       border-radius: 10px;
@@ -60,7 +81,7 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-//styling for buttons
+        //styling for buttons
       .btn {
         font-size:1.8rem;
         color:white;
