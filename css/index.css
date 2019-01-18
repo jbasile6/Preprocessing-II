@@ -174,12 +174,6 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-section {
-  border: 2px solid red;
-}
-div {
-  border: 2px solid green;
-}
 header.header-section {
   padding: 23px 100px;
   border-bottom: 2px dashed #C0C0C0;
