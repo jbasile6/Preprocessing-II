@@ -172,6 +172,7 @@ img {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 section {
   border: 2px solid red;
@@ -229,19 +230,35 @@ header.header-section a {
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -255,9 +272,19 @@ header.header-section a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -268,9 +295,24 @@ header.header-section a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: center;
+  }
 }
 .home .content-pick .destination .btn {
   font-size: 1.8rem;
@@ -279,4 +321,18 @@ header.header-section a {
   border-radius: 10px;
   height: 45px;
   width: 200px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
